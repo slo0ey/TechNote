@@ -1,8 +1,8 @@
 import { AppTheme } from 'context';
 import { useContext } from 'react';
-import LoginButton from 'components/ui/LoginButton';
-import Logo from 'components/ui/Logo';
-import ChangeThemeButton from 'components/ui/ThemeChangeButton';
+import LoginButton from 'components/LoginButton';
+import Logo from 'components/Logo';
+import ChangeThemeButton from 'components/ThemeChangeButton';
 import * as S from './style';
 
 function Header() {

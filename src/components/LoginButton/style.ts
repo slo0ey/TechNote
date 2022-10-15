@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { BaseProps } from "types/common.types";
+import styled from '@emotion/styled';
+import { BaseProps } from 'types/common.types';
 
 type LoginProps = Pick<BaseProps, 'isDarkMode'>;
 

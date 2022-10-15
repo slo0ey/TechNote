@@ -8,8 +8,7 @@ const Logo = styled.div<LogoProps>`
   text-align: center;
   font-size: 2rem;
   font-family: 'Ubuntu', sans-serif;
-  color: ${({ theme, isDarkMode }) =>
-    isDarkMode ? theme.light[0] : theme.dark[0]};
+  color: ${({ theme, isDarkMode }) => (isDarkMode ? theme.light[0] : theme.dark[0])};
 `;
 
 export { Logo };
