@@ -15,6 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "baseUrl": "./src",
     "paths": {
       "assets/*": ["./assets/*"],
@@ -25,6 +26,7 @@
       "types/*": ["./types/*"],
       "utils/*": ["./utils/*"]
     },
+    "types": ["@emotion/react/types/css-prop"],
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "include": ["src"],

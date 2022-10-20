@@ -9,13 +9,12 @@ const ChangeThemeButton = styled.button<ThemeChangeButtonProps>`
   width: 2rem;
   height: 2rem;
   position: relative;
+  margin: auto 1rem auto 0.5rem;
   padding: auto;
   align-self: center;
   text-align: center;
-  background-color: ${({ theme, isDarkMode }) =>
-    isDarkMode ? theme.dark[1] : theme.light[0]};
+  background-color: rgba(0, 0, 0, 0);
   border: 0px;
-  border-radius: 50%;
   cursor: pointer;
 `;
 
@@ -24,7 +23,6 @@ const LightIcon = styled(BsSunFill)<IconProps>`
   position: absolute;
   left: 0.25rem;
   top: 0.25rem;
-  color: ${({ theme }) => theme.dark[1]};
 `;
 
 const DarkIcon = styled(BsMoonStarsFill)<IconProps>`
@@ -32,7 +30,6 @@ const DarkIcon = styled(BsMoonStarsFill)<IconProps>`
   position: absolute;
   left: 0.25rem;
   top: 0.25rem;
-  color: ${({ theme }) => theme.light[0]};
 `;
 
 export { ChangeThemeButton, LightIcon, DarkIcon };

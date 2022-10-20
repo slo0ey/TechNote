@@ -4,6 +4,7 @@ import LoginButton from 'components/LoginButton';
 import Logo from 'components/Logo';
 import ChangeThemeButton from 'components/ThemeChangeButton';
 import * as S from './style';
+import SearchButton from 'components/SearchButton';
 
 function Header() {
   const appTheme = useContext(AppTheme);
@@ -12,8 +13,11 @@ function Header() {
     <S.Header {...appTheme}>
       <S.AbsoluteHeader>
         <Logo />
-        <ChangeThemeButton />
-        <LoginButton />
+        <S.ButtonGroup>
+          <SearchButton />
+          <ChangeThemeButton />
+          <LoginButton />
+        </S.ButtonGroup>
       </S.AbsoluteHeader>
     </S.Header>
   );

@@ -19,4 +19,11 @@ const AbsoluteHeader = styled.div`
   justify-content: space-between;
 `;
 
-export { Header, AbsoluteHeader };
+const ButtonGroup = styled.div`
+  height: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+export { Header, AbsoluteHeader, ButtonGroup };
